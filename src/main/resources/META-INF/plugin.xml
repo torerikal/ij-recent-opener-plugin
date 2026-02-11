@@ -1,0 +1,33 @@
+<!-- Plugin Configuration File: https://plugins.jetbrains.com/docs/intellij/plugin-configuration-file.html -->
+<idea-plugin>
+    <!-- Unique identifier of the plugin. It should be FQN, cannot be changed between the plugin versions. -->
+    <id>com.torerikal.propen</id>
+
+    <!-- Public plugin name should be written in Title Case.
+         Guidelines: https://plugins.jetbrains.com/docs/marketplace/best-practices-for-listing.html#plugin-name -->
+    <name>Propen</name>
+
+    <!-- A displayed Vendor name or Organization ID displayed on the Plugins Page. -->
+    <vendor url="https://www.yourcompany.com">YourCompany</vendor>
+
+    <!-- Description of the plugin displayed on the Plugin Page and IDE Plugin Manager.
+         Guidelines: https://plugins.jetbrains.com/docs/marketplace/best-practices-for-listing.html#plugin-description -->
+    <description><![CDATA[
+        Enter short description for your plugin here.<br>
+        <em>most HTML tags may be used</em>
+    ]]></description>
+
+    <!-- Product and plugin compatibility requirements.
+         Read more: https://plugins.jetbrains.com/docs/intellij/plugin-compatibility.html -->
+
+    <extensions defaultExtensionNs="com.intellij">
+        <searchEverywhereContributor implementation="com.torerikal.recentopener.RecentProjectsSEContributorFactory"/>
+    </extensions>
+
+    <actions>
+        <action id="com.torerikal.recentopener.RecentProjectsAction" class="com.torerikal.recentopener.RecentProjectsAction"
+                text="Recent Projects" description="Opens Recent Projects in Search Everywhere">
+            <keyboard-shortcut keymap="$default" first-keystroke="shift ctrl alt P"/>
+        </action>
+    </actions>
+</idea-plugin>
