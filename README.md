@@ -9,6 +9,8 @@ A simple plugin for IntelliJ IDEA that allows you to quickly search and open rec
 -   **Context Aware**: Automatically filters out the currently open project from the list.
 -   **Helpful Display**: Shows project names and paths relative to your user home directory.
 
+![Screenshot](docs/screenshot.png)
+
 ## Usage
 
 Use the keyboard shortcut `Shift` + `Ctrl` + `Alt` + `P` to directly open the Recent Projects search.
