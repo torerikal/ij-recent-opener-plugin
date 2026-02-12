@@ -1,4 +1,4 @@
-package com.torerikal.recentopener
+package com.cuttingroom.recentopener
 
 import com.intellij.ide.actions.searcheverywhere.SearchEverywhereManager
 import com.intellij.openapi.actionSystem.AnAction

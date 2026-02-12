@@ -1,4 +1,4 @@
-package com.torerikal.recentopener
+package com.cuttingroom.recentopener
 
 import com.intellij.openapi.util.NlsSafe
 

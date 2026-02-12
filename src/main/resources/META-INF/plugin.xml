@@ -1,7 +1,7 @@
 <!-- Plugin Configuration File: https://plugins.jetbrains.com/docs/intellij/plugin-configuration-file.html -->
 <idea-plugin>
     <!-- Unique identifier of the plugin. It should be FQN, cannot be changed between the plugin versions. -->
-    <id>com.torerikal.recentopener</id>
+    <id>com.cuttingroom.recentopener</id>
 
     <!-- Public plugin name should be written in Title Case.
          Guidelines: https://plugins.jetbrains.com/docs/marketplace/best-practices-for-listing.html#plugin-name -->
@@ -21,11 +21,11 @@
          Read more: https://plugins.jetbrains.com/docs/intellij/plugin-compatibility.html -->
 
     <extensions defaultExtensionNs="com.intellij">
-        <searchEverywhereContributor implementation="com.torerikal.recentopener.RecentProjectsSEContributorFactory"/>
+        <searchEverywhereContributor implementation="com.cuttingroom.recentopener.RecentProjectsSEContributorFactory"/>
     </extensions>
 
     <actions>
-        <action id="com.torerikal.recentopener.RecentProjectsAction" class="com.torerikal.recentopener.RecentProjectsAction"
+        <action id="com.cuttingroom.recentopener.RecentProjectsAction" class="com.cuttingroom.recentopener.RecentProjectsAction"
                 text="Recent Projects" description="Opens Recent Projects in Search Everywhere">
             <keyboard-shortcut keymap="$default" first-keystroke="shift ctrl alt P"/>
         </action>
